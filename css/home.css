@@ -1,0 +1,98 @@
+#app-container {
+  /* height: 100vh; */
+  background-color: yellow;
+  overflow: hidden;
+}
+
+#header {
+  /* border: 1px solid black; */
+  background-color: rgb(70, 149, 121);
+  display: flex;
+  justify-content: center;
+}
+
+#inner-head {
+  height: 64px;
+  width: 100%;
+  max-width: 986px;
+  background-color: blue;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search {
+  width: 100%;
+  background-color: rgb(70, 149, 121);
+  display: flex;
+  justify-content: center;
+  
+}
+
+#search-bar {
+  height: 186px;
+  background-color: red;
+  width: 100%;
+  max-width: 986px;
+  border: 1px solid black;
+
+}
+
+#inner-search {
+  position: relative;
+}
+
+#inner-search i {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#browse-items {
+  height: 456px;
+  width: 100%;
+  max-width: 986px;
+  border: 1px solid black;
+
+}
+
+#add-poster {
+  height: 199px;
+  width: 100%;
+  max-width: 986px;
+  border: 1px solid black;
+
+}
+
+#quick-links {
+  height: 188px;
+  width: 100%;
+  max-width: 986px;
+  border: 1px solid black;
+
+}
+
+#about-ikman {
+  height: 190px;
+  width: 100%;
+  max-width: 986px;
+  border: 1px solid black;
+
+}
+
+footer {
+  height: 188px;
+  display: flex;
+  justify-content: center;
+}
+
+#footer-content {
+  background-color: blue;
+  width: 100%;
+  max-width: 986px;
+  border: 1px solid black;
+}
