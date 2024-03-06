@@ -37,7 +37,6 @@
   background-color: rgb(40, 149, 121);
   width: 100%;
   max-width: 986px;
-
 }
 
 #inner-search {
@@ -52,7 +51,7 @@
 }
 
 #browse-items {
-  height: 456px;
+  height: 630px;
   width: 100%;
   max-width: 986px;
   border: 1px solid black;
@@ -221,4 +220,87 @@ footer {
 input::placeholder {
   color: rgb(162, 159, 159);
   font-size: 1rem;
+}
+
+#browse-items-1 {
+  height: 90px;
+  margin: 10px;
+}
+
+#browse-items div:nth-child(2) p {
+  font-weight: bold;
+  font-size: 0.9rem;
+  height: 15px;
+}
+
+#browse-items-container {
+  display: grid;
+  height: calc(100% - 125px);
+  width: 100%;
+  grid: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+.container-item {
+  display: flex;
+  padding: 24px 16px;
+}
+
+.browse-item-img img {
+  width: 60px;
+  height: 60px;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-details div {
+  flex-basis: 40%;
+  line-height: 25px;
+}
+
+.item-details div:last-child {
+  font-size: 0.8rem;
+  color: darkgray;
+}
+
+#see-all {
+  /* visibility: hidden; */
+  display: none;
+}
+
+@media all and (max-width: 800px) {
+  :root {
+    color: red;
+  }
+  #browse-items-container {
+    display: grid;
+    height: 180px;
+    grid-template-columns: repeat(15, max-content);
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+
+  #browse-items-container::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+
+  .container-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #see-all {
+    /* visibility: inherit; */
+    display: inherit;
+  }
+
+  #browse-items {
+    height: 300px;
+  }
 }
