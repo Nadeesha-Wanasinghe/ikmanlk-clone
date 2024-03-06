@@ -54,14 +54,12 @@
   height: 630px;
   width: 100%;
   max-width: 986px;
-  border: 1px solid black;
 }
 
 #add-poster {
   height: 199px;
   width: 100%;
   max-width: 986px;
-  border: 1px solid black;
 }
 
 #quick-links {
@@ -69,6 +67,7 @@
   width: 100%;
   max-width: 986px;
   border: 1px solid black;
+  margin-top: 5px;
 }
 
 #about-ikman {
@@ -271,6 +270,101 @@ input::placeholder {
   display: none;
 }
 
+#add-poster {
+  display: flex;
+  gap: 1px;
+  /* padding: 0 10px; */
+  /* background: green; */
+}
+
+#add-poster div {
+  flex-basis: 50%;
+  padding: 5px;
+  outline: none;
+}
+
+#add-poster-left {
+  border-radius: 5px 0 0 5px;
+  box-shadow: -3px 0 5px 1px rgba(0, 0, 0, 0.15);
+}
+
+#add-poster-right {
+  border-radius: 0 5px 5px 0;
+  box-shadow: 3px 0 5px 1px rgba(0, 0, 0, 0.15);
+}
+
+#add-poster-left {
+  display: flex;
+  height: 100%;
+
+}
+#add-poster-left > div:first-child {
+  flex-basis: 40%;
+  box-shadow: none;
+  /* background: red; */
+  align-self: center;
+  padding-left: 0;
+  display: relative;
+}
+
+#add-poster-left > div:last-child {
+  flex-basis: 60%;
+  box-shadow: none;
+  align-self: center;
+  padding-left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#add-poster-left img {
+  width: 180px;
+}
+
+#add-poster-left button {
+  border-radius: 100px;
+  margin-top: 2px;
+  height: 40px;
+  width: 200px;
+  outline: none;
+  border: none;
+  background-color: #ffc800;
+  cursor: pointer;
+  color: rgb(68, 68, 68);
+}
+#add-poster-left button span{
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#add-poster-right div{
+  margin-left: 20px;
+}
+#add-poster-right div:nth-child(2) {
+  height: 50px;
+}
+
+#add-poster-right img {
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+#add-poster-right button {
+  /* margin-top: -3px; */
+  border-radius: 100px;
+  height: 40px;
+  width: 200px;
+  outline: none;
+  border: none;
+  background-color: #0074ba;
+  cursor: pointer;
+  color: white;
+}
+
+#add-poster-right button span{
+  font-size: 0.9rem;
+  font-weight: bold;
+}
 @media all and (max-width: 800px) {
   :root {
     color: red;
