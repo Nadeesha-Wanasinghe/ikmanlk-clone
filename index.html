@@ -16,7 +16,41 @@
   <body>
     <div id="app-container">
       <header id="header">
-        <div id="inner-head">abaaadf</div>
+        <div id="inner-head">
+          <div id="header-1">
+            <div id="list-a">
+              <div><img src="./img/download.png" alt="ikman.lk" /></div>
+              <div id="list-1">
+                <ul>
+                  <li>
+                    <a href="#"><p>All ads</p></a>
+                  </li>
+                  <div id="left-div">
+                    <li><a href="">සිංහල</a></li>
+                  </div>
+                  <div id="right-div">
+                    <li><a href="">தமிழ்</a></li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="header-2">
+            <div id="list-b">
+              <div id="chat">
+                <i class="fa-solid fa-comments" style="color: #ffffff"></i>
+                <a href="">Chat</a>
+              </div>
+              <div id="login">
+                <i class="fa-solid fa-user-large"></i>
+                <a href="">Login</a>
+              </div>
+              <div>
+                <button>POST YOUR AD</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
       <main id="content">
         <div id="search">
@@ -25,10 +59,12 @@
               <i class="fa-solid fa-location-dot"></i>
               <div>All of Sri Lanka</div>
             </div>
-            <form id="inner-search">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="text" placeholder="What are you looking for?" />
-            </form>
+            <div>
+              <form id="inner-search" action="https://ikman.lk/en/ads">
+                <i class="fa-solid fa-magnifying-glass" style = "color: black; background-color: orange; border-radius: 50%; height: 50px; width: 50px; line-height: 50px; text-align: center;" ></i>
+                <input type="text" placeholder="&nbsp;What are you looking for?" style="font-size: 1.1rem;" name="query"/>
+              </form>
+            </div>
           </div>
         </div>
         <div id="browse-items">
@@ -57,9 +93,7 @@
         </div>
       </main>
       <footer id="footer">
-        <div id="footer-content">
-            lakith
-        </div>
+        <div id="footer-content">lakith</div>
       </footer>
     </div>
   </body>
