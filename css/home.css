@@ -66,25 +66,23 @@
   height: 188px;
   width: 100%;
   max-width: 986px;
-  border: 1px solid black;
-  margin-top: 5px;
+  margin: 30px 0px;
 }
 
 #about-ikman {
-  height: 190px;
+  height: 160px;
   width: 100%;
   max-width: 986px;
-  border: 1px solid black;
 }
 
 footer {
   height: 188px;
   display: flex;
   justify-content: center;
+    border-top: 2px solid green;
 }
 
 #footer-content {
-  background-color: blue;
   width: 100%;
   max-width: 986px;
   border: 1px solid black;
@@ -301,7 +299,6 @@ input::placeholder {
 #add-poster-left > div:first-child {
   flex-basis: 40%;
   box-shadow: none;
-  /* background: red; */
   align-self: center;
   padding-left: 0;
   display: relative;
@@ -365,6 +362,55 @@ input::placeholder {
   font-size: 0.9rem;
   font-weight: bold;
 }
+
+#inner-quick-links {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+#inner-quick-links > div {
+  background-color: #f3f6f5;
+  height: 152px;
+  border-radius: 7px;
+  flex-basis: 25%;
+  padding: 15px 5px;
+  font-size: 0.9rem;
+  line-height: 23px;
+}
+
+#inner-quick-links > div div:last-child {
+  cursor: pointer;
+  color: rgb(68, 68, 68);
+}
+
+strong {
+  font-weight: bold;
+}
+
+.quick-link-topic {
+  margin-bottom: 10px;
+}
+
+#about-ikman {
+  color: rgb(122, 121, 121);
+  font-size: 0.95rem;
+}
+
+#about-ikman strong {
+  font-size: 1rem;
+}
+
+#about-ikman button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: rgb(122, 121, 121);
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 0;
+}
+
 @media all and (max-width: 800px) {
   :root {
     color: red;
