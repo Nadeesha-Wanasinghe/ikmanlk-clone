@@ -79,13 +79,15 @@ footer {
   height: 188px;
   display: flex;
   justify-content: center;
-    border-top: 2px solid green;
+  border-top: 2px solid green;
+  height: 360px;
 }
 
 #footer-content {
   width: 100%;
   max-width: 986px;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
 #header-1 {
@@ -294,7 +296,6 @@ input::placeholder {
 #add-poster-left {
   display: flex;
   height: 100%;
-
 }
 #add-poster-left > div:first-child {
   flex-basis: 40%;
@@ -328,12 +329,12 @@ input::placeholder {
   cursor: pointer;
   color: rgb(68, 68, 68);
 }
-#add-poster-left button span{
+#add-poster-left button span {
   font-size: 0.9rem;
   font-weight: bold;
 }
 
-#add-poster-right div{
+#add-poster-right div {
   margin-left: 20px;
 }
 #add-poster-right div:nth-child(2) {
@@ -358,7 +359,7 @@ input::placeholder {
   color: white;
 }
 
-#add-poster-right button span{
+#add-poster-right button span {
   font-size: 0.9rem;
   font-weight: bold;
 }
@@ -395,6 +396,7 @@ strong {
 #about-ikman {
   color: rgb(122, 121, 121);
   font-size: 0.95rem;
+  line-height: 20px;
 }
 
 #about-ikman strong {
@@ -409,6 +411,59 @@ strong {
   font-size: 0.95rem;
   cursor: pointer;
   padding: 0;
+}
+
+#footer-content > div:first-child {
+  flex-basis: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+
+}
+
+#footer-content > div:last-child {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  padding: 20px 0px;
+  color: rgb(102, 102, 102);
+}
+#footer-content > div:last-child img{
+  height: 25px;
+}
+
+#footer-content-top > div div:first-child{
+  margin-bottom: 15px;
+}
+
+#footer-content-top > div a{
+  line-height: 25px;
+  color: #0074ba;
+  font-size: 0.9rem;
+}
+
+#app-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+#app-icons img {
+  cursor: pointer;
+  position: relative;
+  top: -5px;
+}
+#app-icons img:first-child {
+  width: 150px;
+  height: 65px;
+}
+#app-icons img:last-child {
+  width: 120px;
+  height: 50px;
+}
+.sub-footer {
+  padding-bottom: 10px;
 }
 
 @media all and (max-width: 800px) {
