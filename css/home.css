@@ -1,8 +1,4 @@
-#app-container {
-}
-
 #header {
-  /* border: 1px solid black; */
   background-color: rgb(40, 149, 121);
   display: flex;
   justify-content: center;
@@ -14,7 +10,6 @@
   width: 100%;
   max-width: 986px;
   background-color: rgb(40, 149, 121);
-  /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
 }
@@ -43,11 +38,12 @@
   position: relative;
 }
 
-#inner-search i {
+#inner-search button {
   position: absolute;
-  right: 5px;
+  right: 0px;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 
 #browse-items {
@@ -207,7 +203,6 @@ footer {
 
 #inner-search input {
   width: calc(100vw - 200px);
-  /* width: auto; */
   max-width: 800px;
   height: 58.5px;
   border-radius: 50px;
@@ -266,15 +261,12 @@ input::placeholder {
 }
 
 #see-all {
-  /* visibility: hidden; */
   display: none;
 }
 
 #add-poster {
   display: flex;
   gap: 1px;
-  /* padding: 0 10px; */
-  /* background: green; */
 }
 
 #add-poster div {
@@ -348,7 +340,6 @@ input::placeholder {
 }
 
 #add-poster-right button {
-  /* margin-top: -3px; */
   border-radius: 100px;
   height: 40px;
   width: 200px;
@@ -364,15 +355,19 @@ input::placeholder {
   font-weight: bold;
 }
 
+#quick-links {
+  margin-top: 40px;
+}
+
 #inner-quick-links {
   display: flex;
-  margin-top: 10px;
+  margin-top: 20px;
   gap: 10px;
 }
 
 #inner-quick-links > div {
   background-color: #f3f6f5;
-  height: 152px;
+  /* height: 152px; */
   border-radius: 7px;
   flex-basis: 25%;
   padding: 15px 5px;
@@ -394,6 +389,7 @@ strong {
 }
 
 #about-ikman {
+  margin-top: 20px;
   color: rgb(122, 121, 121);
   font-size: 0.95rem;
   line-height: 20px;
@@ -411,6 +407,8 @@ strong {
   font-size: 0.95rem;
   cursor: pointer;
   padding: 0;
+  position: relative;
+  top: -15px;
 }
 
 #footer-content > div:first-child {
@@ -418,7 +416,6 @@ strong {
   display: flex;
   justify-content: space-between;
   padding: 20px 0px;
-
 }
 
 #footer-content > div:last-child {
@@ -429,15 +426,15 @@ strong {
   padding: 20px 0px;
   color: rgb(102, 102, 102);
 }
-#footer-content > div:last-child img{
+#footer-content > div:last-child img {
   height: 25px;
 }
 
-#footer-content-top > div div:first-child{
+#footer-content-top > div div:first-child {
   margin-bottom: 15px;
 }
 
-#footer-content-top > div a{
+#footer-content-top > div a {
   line-height: 25px;
   color: #0074ba;
   font-size: 0.9rem;
@@ -465,11 +462,57 @@ strong {
 .sub-footer {
   padding-bottom: 10px;
 }
+.container-item div {
+  cursor: pointer;
+}
+
+#list-icon {
+  display: none;
+}
+
+#search-btn {
+  background-color: transparent;
+  border: none;
+}
+
+#footer-content-hidden {
+  display: none;
+}
+
+@media all and (min-width: 849px) and (max-width: 992px) {
+  #about-ikman {
+    margin-bottom: 30px;
+  }
+  #browse-items,
+  #add-poster,
+  #quick-links,
+  #about-ikman,
+  #footer {
+    padding: 0px 10px;
+  }
+}
+
+@media all and (min-width: 800px) and (max-width: 850px) {
+  #app-icons {
+    flex-direction: column;
+  }
+  #about-ikman {
+    margin-bottom: 30px;
+  }
+  #browse-items,
+  #add-poster,
+  #quick-links,
+  #about-ikman,
+  #footer {
+    padding: 0px 10px;
+  }
+}
 
 @media all and (max-width: 800px) {
-  :root {
-    color: red;
+  #about-ikman {
+    margin-bottom: 25px;
   }
+
   #browse-items-container {
     display: grid;
     height: 180px;
@@ -491,11 +534,162 @@ strong {
   }
 
   #see-all {
-    /* visibility: inherit; */
     display: inherit;
   }
 
   #browse-items {
-    height: 300px;
+    height: 200px;
+  }
+
+  #list-1 > ul {
+    display: none;
+  }
+
+  #list-b div > a,
+  #list-b div button:first-child {
+    display: none;
+  }
+
+  #list-icon {
+    display: initial;
+    margin-left: 10px;
+    position: relative;
+    bottom: 3px;
+    transform: scale(1.6);
+  }
+
+  #search-bar {
+    height: 125px;
+  }
+
+  #inner-search input {
+    width: calc(100vw - 30px);
+    max-width: 800px;
+    height: 44px;
+  }
+
+  #inner-search i {
+    height: 40px !important;
+    width: 40px !important;
+    line-height: 40px !important;
+    right: 1px !important;
+  }
+
+  #add-poster {
+    flex-direction: column;
+    padding: 0px 15px;
+    gap: 20px;
+    height: 550px;
+  }
+
+  #add-poster-left,
+  #add-poster-right {
+    border-radius: 5px;
+    box-shadow: 0px 0 11px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  #add-poster-left {
+    flex-direction: column;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #add-poster-left img {
+    padding-top: 20px;
+  }
+
+  #add-poster-left-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px !important;
+  }
+
+  #add-poster-right {
+    height: 150px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+
+  #quick-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+  }
+
+  #start-making-money p {
+    height: 20px !important;
+    line-height: 20px !important;
+  }
+
+  #inner-quick-links {
+    flex-shrink: 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  #inner-quick-links::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+
+  #inner-quick-links > div {
+    width: auto;
+    min-width: 300px;
+    height: 150px;
+  }
+
+  #about-ikman {
+    padding: 20px 10px 0px 15px;
+    height: 120px;
+    margin-top: 0px;
+  }
+
+  #about-ikman button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+  }
+
+  #hide-para {
+    display: none;
+  }
+
+  #footer-content {
+    display: none;
+  }
+
+  #footer-content-hidden {
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer-content-hidden > div {
+    border-bottom: 1px solid darkgray;
+  }
+
+  #footer-content-hidden a {
+    color: #0074ba;
+  }
+
+  #browse-items-1 {
+    height: 15px;
+    line-height: 15px !important;
+    white-space: wrap;
+    text-align: start !important;
+  }
+
+  #search-btn i{
+    position: relative;
+    left: 5px;
   }
 }
